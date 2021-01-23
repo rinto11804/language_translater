@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&display=swap" rel="stylesheet">
+	<title>tr</title>
+<style>
+  *{
+   font-family: 'Baloo Chettan 2', cursive;
+  }
+.textarea {
+  border:black;
+  display: block;
+  width: 50%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+ 
+}
+
+.textarea[contenteditable]:empty::before {
+  content:"enter the text............" ;
+  color:grey;
+}
+
+</style>
+</head>
+
+<body>
+<form action="#" method="post">
+<label >enter the text:</label>
+ <input class="textarea"name="get" role="textbox" contenteditable>
+ <br>
+ <label >enter the language</label>
+<input type="text" name="text">
+<br>
+<input type="submit" value="submit">
+ </form>
+<div>
+<label >result will show here:</label>
+<p name= "to">{{sentence}}</p>
+</div>
+  </body>
+</html>
