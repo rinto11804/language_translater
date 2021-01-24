@@ -1,6 +1,6 @@
 from flask import Flask, render_template,request
 from process import lang_pro
-app = Flask('app')
+app = Flask(__name__)
 @app.route('/')
 def home():
   return render_template("index.html")
@@ -12,5 +12,5 @@ def home1():
     get=request.form["get"]
     sentence=lang_pro(text,get)
     return render_template("index.html",sentence=sentence)
-
-app.run(debug=False,host='0.0.0.0')
+if__name__=="__main__"
+  app.run(debug=False,host='0.0.0.0')
