@@ -13,4 +13,4 @@ def home1():
     sentence=lang_pro(text,get)
     return render_template("index.html",sentence=sentence)
 
-app.run( debug=False,host='0.0.0.0')
+app.run(debug=False,host='0.0.0.0')
