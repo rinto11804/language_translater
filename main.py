@@ -12,5 +12,5 @@ def home1():
     get=request.form["get"]
     sentence=lang_pro(text,get)
     return render_template("index.html",sentence=sentence)
-if__name__=="__main__":
+if __name__ == "__main__":
   app.run(debug=False,host='0.0.0.0')
