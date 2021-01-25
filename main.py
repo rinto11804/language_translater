@@ -1,4 +1,4 @@
-from Flask import Flask, render_template,request
+from flask import Flask, render_template,request
 from process import lang_pro
 app = Flask(__name__)
 @app.route('/')
@@ -14,4 +14,4 @@ def home1():
     return render_template("index.html",sentence=sentence)
 
 if __name__ == "__main__":
-    app.run(debug=False,host="0.0.0.0")
+    app.run(debug=True)
